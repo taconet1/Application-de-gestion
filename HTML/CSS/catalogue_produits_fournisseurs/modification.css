@@ -1,0 +1,140 @@
+/* Nav */
+#option a:nth-child(3) {
+	font-weight: bold;
+}
+
+form {
+	margin: 0 0 1% 0;
+	width: 80%;
+}
+
+p {
+	margin: 0;
+}
+
+/* Haut */
+.fas.fa-file-image {
+	border: 1px dashed;
+	font-size: 40px;
+	padding: 6%;
+}
+
+div#haut {
+	width: 100%;
+	display: flex;
+	margin: 1%;
+}
+
+#infos_catalogue p {
+	margin-bottom: 1%;
+	margin-top: 10%;
+}
+
+#infos_catalogue input, #infos_catalogue select {
+	margin: 6% 0 6% 0;
+}
+
+#infos_catalogue label {
+	margin: 10.5% 0 10.5% 0;
+}
+
+#infos_catalogue {
+	width: 50%;
+	margin-left: 2%;
+	display: flex;
+}
+
+#infos_catalogue div:nth-child(2) {
+	margin-top: 5%;
+}
+
+#infos_catalogue div {
+	display: flex;
+	flex-direction: column;
+}
+
+#modification {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin: 1%;
+}
+
+#modification p:first-child {
+	text-decoration: underline;
+}
+
+#modification p {
+	margin: 1% 0 1% 0;
+}
+
+#document i {
+	font-size: 30px;
+}
+
+#document {
+	margin-top: 4%;
+	width: 35%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+/* Table */
+table {
+	margin: 0 0 0 1%;
+	width: 104%;
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+td {
+	border: 1px solid;
+}
+
+table img {
+	width: 80%;
+	text-align: center;
+}
+
+.carré {
+	width: 60px;
+}
+
+table i {
+	font-size: 20px;
+	margin: 5%;
+}
+
+/* Enregistrement */
+#enregistrement {
+	padding: 0.5% 1% 0 1%;
+	margin: 11% 0 0 0;
+	border-top: 1px solid;;
+	display: flex;
+	align-items: flex-end;
+	width: 104%;
+	justify-content: space-between;
+}
+
+form .button {
+	align-self: center;
+	margin-top: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+
+input[type=submit], input[type=reset] {
+	width: 120px;
+	padding: 5px;
+}
+
+ input[type=reset] {
+	margin-left: 5%;
+}
+
+#button {
+	display: flex;
+	width: 24%;
+}

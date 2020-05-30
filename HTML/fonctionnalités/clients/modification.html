@@ -70,9 +70,9 @@
 						</div>
 						<div>
 							<label for="mail">Email*</label>
-							<input type="text" id="mail" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+							<input type="email" id="mail" required>
 							<label for="tél">Tél*</label>
-							<input type="text" id="tél" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" required>
+							<input type="number" id="tél" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" required>
 						</div>
 						<div>
 							<div id="label">
@@ -87,7 +87,7 @@
 								<input type="date" id="naissance" value="2018-07-22" min="1900-01-01" max="2020-12-31" required>
 								<input type="text" id="rue" pattern="[A-zÀ-ú0-9]*" required>
 								<input type="text" id="complément" pattern="[A-zÀ-ú0-9]*">
-								<input type="text" id="cp" pattern="[0-9]*" required>
+								<input type="number" id="cp" required>
 								<input type="text" id="ville" pattern="[A-zÀ-ú]*" required>
 								<input type="text" id="pays" pattern="[A-zÀ-ú]*" required>
 							</div>
