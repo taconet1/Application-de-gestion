@@ -1,0 +1,19 @@
+/* Nav */
+#option a:first-child {
+	font-weight: bold;
+}
+
+/* Content */
+#content {
+	width: 100%;
+	margin: 0 1% 0 1%;
+}
+
+/* Footer */
+footer p {
+	margin: 1%;
+}
+
+footer {
+	text-align:center;
+}
