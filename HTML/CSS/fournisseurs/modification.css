@@ -55,6 +55,7 @@ div#haut {
 	flex-direction: column;
 	justify-content: flex-end;
 	margin: 1%;
+	margin-left: 20%;
 }
 
 #modification p:first-child {
@@ -67,6 +68,14 @@ div#haut {
 
 #icone {
 	margin: 2% 0 0 0;
+}
+
+#icone a {
+	padding: 0 2% 0 2%;
+	margin-left: 10%;
+	font-size: 30px;
+	text-decoration: none;
+	color: black;
 }
 
 /* Centre */
@@ -82,7 +91,7 @@ div#centre {
 }
 
 #autres {
-	margin-left: 10%;
+	margin-left: 20%;
  }
 
 #adresse div, #autres div{
@@ -127,7 +136,10 @@ div#centre {
 	width: 250px;
 	display: flex;
 	align-self: center;
-	margin-left: 5%;
+}
+
+#infos_contact {
+	margin-right: 5%;
 }
 
 #ajout_contact i {
