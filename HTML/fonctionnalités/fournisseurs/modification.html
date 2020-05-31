@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Societe PILAF_Application</title>
+	
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../CSS/fournisseurs/modification.css">
+	<link rel="stylesheet" type="text/css" href="../../CSS/form.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+	<header>
+		<p id="pilaf">PILAF BIOCOOP</p>
+		<h1>Fournisseurs</h1>
+		<div id="right">
+			<div id="avatar">
+				<i class='fas fa-user-circle'></i>
+			</div>
+			<div id="bas_avatar">
+				<p>Patrick Lejeune</p>
+				<div id="dropdown">
+					<i class="fas fa-chevron-down"></i>
+					<div id="dropdown-content">
+						<a href="../../profil.html">Mon profil</a>
+						<a href="../../main.html">Se déconnecter</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<hr>
+	
+	<main>
+		<nav>
+			<div id="option">
+				<a href="consultation.html">Liste des fournisseurs</a>
+				<a href="création.html">Créer fournisseur</a>
+				<a href="modification.html">Modifier fournisseur</a>
+			</div>
+			<div id="option2">
+				<a href="../../home.html" id="home"><i class='fas fa-home'></i></a>
+				<a href="../../aide.html" id="aide" target="_blank">Aide</a>
+			</div>
+		</nav>
+
+			<form>
+				<div id="haut">
+					
+						<i class="material-icons">add_a_photo</i>
+						<div id="infos_fournisseur">
+						
+							<div class="label">
+								<label for="nom">Nom*</label>
+								<label for="société">Société*</label>
+								<label for="catégorie">Catégories*</label>
+							</div>
+							
+							<div class="input">
+								<input type="text" id="nom" value="Infino" pattern="[A-zÀ-ú]*" required>
+								<select id="société" name="société">
+									<option>SA</option>
+									<option>SARL</option>
+									<option>EURL</option>
+									<option>SELARL</option>
+									<option>SAS</option>
+									<option>SASU</option>
+									<option>SNC</option>
+									<option>SCP</option>
+									<option>SCOP</option>
+									<option>SCIC</option>
+									<option>-- Ajouter --</option>
+								</select>
+								<input type="text" id="catégorie" value="Fruits et légumes, Vrac, Viande" required>
+							</div>
+						</div>
+						<div id="modification">
+							<p>Historique de modification</p>
+							<p>Créé le: Jeudi 20 mars 2021 à 10:56</p>
+							<div id="icone">
+								<input type="date" id="rdv" value="2020-05-01" min="2020-01-01" max="2030-12-31" required>
+								<i class="fas fa-book"></i>
+							</div>
+						</div>
+						
+					
+				</div>
+				<div id="centre">
+					
+						<div id="adresse">
+							<div>
+								<label for="rue">N° et nom de la voie*</label>
+								<label for="complément">Complément d'adresse</label>							
+								<label for="cp">Code postal*</label>
+								<label for="ville">Ville*</label>
+								<label for="pays">Pays*</label>
+							</div>
+							<div>
+								<input type="text" id="rue" pattern="[A-zÀ-ú0-9]*" required>
+								<input type="text" id="complément" pattern="[A-zÀ-ú0-9]*">
+								<input type="text" id="cp" pattern="[0-9]*" required>
+								<input type="text" id="ville" pattern="[A-zÀ-ú]*" required>
+								<input type="text" id="pays" pattern="[A-zÀ-ú]*" required>
+							</div>
+						</div>
+						<div id="autres">
+							<div>
+								<label for="site">Site web*</label>
+								<label for="mail">Email*</label>
+								<label for="tél">Tél*</label>
+								<label for="fax">Fax</label>
+							</div>
+
+							<div>
+								<input type="url" id="site" required>
+								<input type="email" id="mail" required>
+								<input type="text" id="tél" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" required>
+								<input type="text" id="fax" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$">
+							</div>
+						</div>
+					
+				</div>
+				<div id="tab">
+						<a href="modification.html">Contacts</a>
+						<a href="paiements.html">Paiements</a>
+					</div>
+				<div id="bas">
+					
+					<div id="content">
+						<i class="far fa-user"></i>
+						<div id="infos_contact">
+							<p>M. René POCHINKI</p>
+							<p>Cadre commercial</p>
+							<p>renopo@domain.com</p>
+							<p>01 25 66 89 45</p>
+						</div>
+						<div id="ajout_contact">
+							<i class="fas fa-plus-circle"></i>
+							<p>Ajouter un contact</p>
+						</div>
+					</div>
+				</div>
+				
+				<div id="enregistrement">
+					<div>
+						<p>Date et heure de la dernière modification: Jeudi 20 mars à 10:56</P>
+						<p>Employé responsable: Prénom Nom</p>
+					</div>
+					<div id="button">
+						<input type="submit" id="enregistrer" value="Enregistrer">
+						<input type="reset" id="annuler" value="Annuler">
+					</div>
+				</div>
+			</form>
+	</main>
+	
+	<hr>
+	<footer>
+		<p>Copyright © 2020. Tous droits réservés.</p>
+	</footer>
+
+</body>
+</html>

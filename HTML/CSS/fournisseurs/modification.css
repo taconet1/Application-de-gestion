@@ -1,0 +1,186 @@
+/* Nav */
+#option a:nth-child(3) {
+	font-weight: bold;
+}
+
+form {
+	margin: 0 0 1% 0;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+p {
+	margin: 0;
+}
+
+/* Haut */
+
+.material-icons {
+	float: left;
+	border: 1px dashed;
+	font-size: 30px;
+	padding: 5%;
+}
+
+div#haut {
+	width: 100%;
+	display: flex;
+	margin: 1% 1% 0.5% 1%;
+}
+
+#infos_fournisseur input, #infos_fournisseur select {
+	margin: 6% 0% 8.5% 10%;
+}
+
+#infos_fournisseur label {
+	margin: 25% 10% 5% 0;
+}
+
+#infos_fournisseur div {
+	display: flex;
+	flex-direction: column;
+}
+
+#infos_fournisseur {
+	align-self: flex-end;
+	width: 50%;
+	margin-left: 2%;
+	display: flex;
+}
+
+#modification {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin: 1%;
+}
+
+#modification p:first-child {
+	text-decoration: underline;
+}
+
+#modification p {
+	margin: 1% 0 1% 0;
+}
+
+#icone {
+	margin: 2% 0 0 0;
+}
+
+/* Centre */
+div#centre {
+	width: 100%;
+	display: flex;
+	margin: 0 1% 0 1%;
+}
+
+#adresse, #autres {
+	align-self: flex-end;
+	display: flex;
+}
+
+#autres {
+	margin-left: 10%;
+ }
+
+#adresse div, #autres div{
+	display: flex;
+	flex-direction: column;
+}
+
+#centre input, #centre select {
+	margin: 3.5% 0 1.5% 0;
+	width: 300px;
+}
+
+#centre label {
+	width: 160px;
+	margin: 6% 2% 6% 0;
+}
+
+#autres label {
+	width: 100px;
+	margin: 12% 2% 7.5% 0;
+}
+
+/* Bas */
+#bas {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0.5% 1% 0.5% 1%;
+}
+
+#bas #content {
+	width: 100%;
+	display: flex;
+}
+
+.far.fa-user {
+	font-size: 50px;
+	margin: 1% 1% 0 1%;
+}
+
+#ajout_contact {
+	width: 250px;
+	display: flex;
+	align-self: center;
+	margin-left: 5%;
+}
+
+#ajout_contact i {
+	font-size: 25px;
+}
+
+#ajout_contact p {
+	margin: 1% 0 0 3%;
+}
+
+/* Tab */
+#tab {
+	padding: 0.5% 0 0.5% 0;
+	width: 100%;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+#tab a {
+	border-right: 1px solid;
+	text-decoration: none;
+	color: black;
+	padding: 0.5% 1% 0.5% 1%;
+}
+
+/* Enregistrement */
+#enregistrement {
+	padding: 0.5% 1% 0 1%;
+	margin: 0;
+	border-top: 1px solid;;
+	display: flex;
+	align-items: flex-end;
+	width: 100%;
+	justify-content: space-between;
+}
+
+form .button {
+	align-self: center;
+	width: 90%;
+	margin-top: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+
+input[type=submit], input[type=reset] {
+	width: 120px;
+	padding: 5px;
+}
+
+input[type=reset] {
+	margin-left: 8%;
+}
+
+#button {
+	width: 24%;
+}
