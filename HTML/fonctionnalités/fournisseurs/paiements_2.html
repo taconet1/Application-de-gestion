@@ -5,6 +5,7 @@
 	
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../../CSS/fournisseurs/modification.css">
+	<link rel="stylesheet" type="text/css" href="../../CSS/fournisseurs/paiements.css">
 	<link rel="stylesheet" type="text/css" href="../../CSS/form.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -36,7 +37,8 @@
 		<nav>
 			<div id="option">
 				<a href="consultation.html">Liste des fournisseurs</a>
-				<a href="création.html" style="font-weight: bold">Créer fournisseur</a>
+				<a href="création.html">Créer fournisseur</a>
+				<a href="modification.html">Modifier fournisseur</a>
 			</div>
 			<div id="option2">
 				<a href="../../home.html" id="home"><i class='fas fa-home'></i></a>
@@ -57,9 +59,8 @@
 							</div>
 							
 							<div class="input">
-								<input type="text" id="nom" pattern="[A-zÀ-ú]*" required>
+								<input type="text" id="nom" value="Infino" pattern="[A-zÀ-ú]*" required>
 								<select id="société" name="société">
-									<option></option>
 									<option>SA</option>
 									<option>SARL</option>
 									<option>EURL</option>
@@ -72,10 +73,12 @@
 									<option>SCIC</option>
 									<option>-- Ajouter --</option>
 								</select>
-								<input type="text" id="catégorie"" required>
+								<input type="text" id="catégorie" value="Fruits et légumes, Vrac, Viande" required>
 							</div>
 						</div>
 						<div id="modification">
+							<p>Historique de modification</p>
+							<p>Créé le: Jeudi 20 mars 2021 à 10:56</p>
 							<div id="icone">
 								<input type="date" id="rdv" value="2020-05-01" min="2020-01-01" max="2030-12-31" required>
 								<a href="../catalogue_produits_fournisseurs/liste_des_catalogues.html" target="_blank"><i class="fas fa-book"></i></a>
@@ -120,22 +123,33 @@
 					
 				</div>
 				<div id="tab">
-						<a href="création.html" style="font-weight: bold">Contacts</a>
-						<a href="paiements_1.html">Paiements</a>
-					</div>
+					<a href="modification.html">Contacts</a>
+					<a href="paiements.html" style="font-weight: bold">Paiements</a>
+				</div>
 				<div id="bas">
-					
-					<div id="content">
-						<div id="ajout_contact" style="margin: 2% 0 2% 0">
-							<i class="fas fa-plus-circle"></i>
-							<p>Ajouter un contact</p>
-						</div>
-					</div>
+					<table>
+							<thead>
+								<tr>
+									<th></th>
+									<th>Numéro de compte</th>
+									<th>Nom de la banque</th>
+									<th>Nom du titulaire du compte</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><i class="fas fa-plus-circle"></i></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
 				</div>
 				
 				<div id="enregistrement">
 					<div>
-						<p>Date et heure de création: Jeudi 20 mars à 10:56</P>
+						<p>Date et heure de la dernière modification: Jeudi 20 mars à 10:56</P>
 						<p>Employé responsable: Prénom Nom</p>
 					</div>
 					<div id="button">
