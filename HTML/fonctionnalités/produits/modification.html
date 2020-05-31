@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Societe PILAF_Application</title>
+	
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../CSS/produits/modification.css">
+	<link rel="stylesheet" type="text/css" href="../../CSS/form.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+	<header>
+		<p id="pilaf">PILAF BIOCOOP</p>
+		<h1>Produits</h1>
+		<div id="right">
+			<div id="avatar">
+				<i class='fas fa-user-circle'></i>
+			</div>
+			<div id="bas_avatar">
+				<p>Patrick Lejeune</p>
+				<div id="dropdown">
+					<i class="fas fa-chevron-down"></i>
+					<div id="dropdown-content">
+						<a href="../../profil.html">Mon profil</a>
+						<a href="../../main.html">Se déconnecter</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<hr>
+	
+	<main>
+		<nav>
+			<div id="option">
+				<a href="consultation.html">Liste des produits</a>
+				<a href="création.html">Créer produit</a>
+				<a href="modification.html">Modifier produit</a>
+			</div>
+			<div id="option2">
+				<a href="../../home.html" id="home"><i class='fas fa-home'></i></a>
+				<a href="../../aide.html" id="aide" target="_blank">Aide</a>
+			</div>
+		</nav>
+								
+				
+			<form>
+				<div id="haut">
+					<img id="img_article" src="../../images/pinklady.jpg" alt="Pomme Pink Lady">	
+					<div id="infos_produit">
+						<div id="label">
+							<p>Référence: PPL45 874</p>
+							<label for="nom">Désignation*</label>
+							<label for="fournisseur">Fournisseur*</label>
+							<label for="catégorie">Catégories*</label>
+							<p>Prix de vente TTC: 2.3€</p>
+						</div>
+						
+						<div id="input">
+							<input type="text" id="nom" value="Pomme" pattern="[A-zÀ-ú]*" required>
+
+							<select id="fournisseur" name="fournisseur">
+								<option>NaturéO</option>
+								<option>Amélie et Yoann Cosse</option>
+								<option>Babybio</option>
+								<option>Bovetti</option>
+								<option>Bélice</option>
+								<option>Brasserie du Chanoine</option>
+								<option>Delouis</option>
+								<option>EARL Fontaine de Berle</option>
+								<option>-- Ajouter --</option>
+							</select>
+							
+							<input type="text" id="catégorie" value="Fruits et légumes" required>
+						</div>
+					</div>
+					
+					<div id="modification">
+						<img src="../../images/code-barre.png">
+						<p>Code barre: 123456789012</p>
+						<p>Historique de modification</p>
+						<p>Créé le: Jeudi 20 mars 2021 à 10:56</p>
+					</div>
+				</div>
+				<div id="centre">
+					<div>
+						<label for="achat_UHT">Prix d'achat TTC*</label>
+						<input type="text" id="achat_UHT" value="2.0" pattern="[0-9]*" required>
+						<label for="achat_UTTC">Prix de vente HT*</label>
+						<input type="text" id="achat_UTTC" value="2.11" pattern="[0-9]*" required>
+						<label for="tva">TVA*</label>
+						<input type="text" id="tva" value="5.5%" pattern="[0-9]*" required>
+					</div>
+					
+					<div>
+						<label for="label">Label</label>
+						<input type="text" id="label" pattern="[A-zÀ-ú]*" required>
+						<label for="région">Région</label>
+						<select id="région" name="région">
+							<option></option>
+							<option>Auvergne-Rhône-Alpes</option>
+							<option>Bourgogne-France-Comté</option>
+							<option>Bretagne</option>
+							<option>Centre-Val de Loire</option>
+							<option>Corse</option>
+							<option>Grand Est</option>
+							<option>Hauts-de-France</option>
+							<option>Ile-de-France</option>
+							<option>Normandie</option>
+							<option>Nouvelle-Aquitaine</option>
+							<option>Occitanie</option>
+							<option>Pays de la Loire</option>
+							<option>Provence-Alpes-Côte d'Azur</option>
+						</select>
+						<label for="pays">Pays</label>
+						<select id="pays" name="pays">
+							<option></option>
+							<option>France</option>
+							<option>Espagne</option>
+						</select>
+						<label for="nutri">Nutri-score</label>
+						<select id="nutri" name="nutri">
+							<option></option>
+							<option>A</option>
+							<option>B</option>
+							<option>C</option>
+							<option>D</option>
+							<option>E</option>
+						</select>
+					</div>
+					<div>
+						<label for="rayon">N° rayon</label>
+						<input type="text" id="rayon" pattern="[0-9]*">
+						<label for="étagère">N° étagère</label>
+						<input type="text" id="étagère" pattern="[0-9]*">
+					</div>
+					<div id="description">
+						<div>
+							<label for="infos_nutri">Informations nutritionnelle</label>
+							<textarea id="story" name="story"></textarea>
+						</div>
+						<div>
+							<label for="ingrédients">Ingrédients</label>
+							<textarea id="story" name="story"></textarea>
+						</div>
+					</div>
+				</div>
+				<div id="bas">
+					<table>
+						<thead>
+							<tr>
+								<th></th>
+								<th>Désignation</th>
+								<th>Promotion</th>
+								<th>Date début</th>
+								<th>Date fin</th>
+								<th>Prix après promotion</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><i class="fas fa-plus-circle"></i></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div id="enregistrement">
+					<div>
+						<p>Date et heure de la dernière modification: Jeudi 20 mars à 10:56</P>
+						<p>Employé responsable: Prénom Nom</p>
+					</div>
+					<div id="button">
+						<input type="submit" id="enregistrer" value="Enregistrer">
+						<input type="reset" id="annuler" value="Annuler">
+					</div>
+				</div>
+			</form>
+	</main>
+	
+	<hr>
+	<footer>
+		<p>Copyright © 2020. Tous droits réservés.</p>
+	</footer>
+
+</body>
+</html>
