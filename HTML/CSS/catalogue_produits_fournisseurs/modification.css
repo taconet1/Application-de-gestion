@@ -61,6 +61,10 @@ div#haut {
 	margin: 1%;
 }
 
+#modification input[type="date"] {
+	width: 40%;
+}
+
 #modification p:first-child {
 	text-decoration: underline;
 }
