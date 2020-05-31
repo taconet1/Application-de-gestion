@@ -96,10 +96,10 @@
 					
 					<div>
 						<label for="label">Label</label>
-						<input type="text" id="label" pattern="[A-zÀ-ú]*" required>
+						<input type="text" id="label" value="Agriculture biologique" pattern="[A-zÀ-ú]*" required>
 						<label for="région">Région</label>
 						<select id="région" name="région">
-							<option></option>
+							<option>Andalousie</option>
 							<option>Auvergne-Rhône-Alpes</option>
 							<option>Bourgogne-France-Comté</option>
 							<option>Bretagne</option>
@@ -116,13 +116,11 @@
 						</select>
 						<label for="pays">Pays</label>
 						<select id="pays" name="pays">
-							<option></option>
-							<option>France</option>
 							<option>Espagne</option>
+							<option>France</option>
 						</select>
 						<label for="nutri">Nutri-score</label>
 						<select id="nutri" name="nutri">
-							<option></option>
 							<option>A</option>
 							<option>B</option>
 							<option>C</option>
@@ -132,9 +130,9 @@
 					</div>
 					<div>
 						<label for="rayon">N° rayon</label>
-						<input type="text" id="rayon" pattern="[0-9]*">
+						<input type="text" id="rayon" value="1" pattern="[0-9]*">
 						<label for="étagère">N° étagère</label>
-						<input type="text" id="étagère" pattern="[0-9]*">
+						<input type="text" id="étagère" value="27" pattern="[0-9]*">
 					</div>
 					<div id="description">
 						<div>
@@ -152,7 +150,7 @@
 						<thead>
 							<tr>
 								<th></th>
-								<th>Désignation</th>
+								<th>Nom promotion</th>
 								<th>Promotion</th>
 								<th>Date début</th>
 								<th>Date fin</th>
