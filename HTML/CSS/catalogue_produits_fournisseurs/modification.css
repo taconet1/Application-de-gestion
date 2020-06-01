@@ -19,6 +19,11 @@ main p {
 	padding: 6%;
 }
 
+#haut img {
+	border: 1px dashed;
+	width: 10%;
+}
+
 div#haut {
 	width: 100%;
 	display: flex;

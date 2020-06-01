@@ -80,8 +80,8 @@
 							<p>Historique de modification</p>
 							<p>Créé le: Jeudi 20 mars 2021 à 10:56</p>
 							<div id="icone">
-								<input type="date" id="rdv" value="2020-05-01" min="2020-01-01" max="2030-12-31" required>
-								<a href="../catalogue_produits_fournisseurs/liste_des_catalogues.html" target="_blank"><i class="fas fa-book"></i></a>
+								<input type="datetime-local" id="rdv" value="2020-05-01T13:30" min="2020-01-01T00:00" max="2030-12-31T:00:00">
+								<a href="../catalogue_produits_fournisseurs/consultation.html" target="_blank"><i class="fas fa-book"></i></a>
 							</div>
 						</div>
 						
@@ -98,11 +98,11 @@
 								<label for="pays">Pays*</label>
 							</div>
 							<div>
-								<input type="text" id="rue" pattern="[A-zÀ-ú0-9]*" required>
+								<input type="text" id="rue" value="24 avenue de Gérard" pattern="[A-zÀ-ú0-9]*" required>
 								<input type="text" id="complément" pattern="[A-zÀ-ú0-9]*">
-								<input type="text" id="cp" pattern="[0-9]*" required>
-								<input type="text" id="ville" pattern="[A-zÀ-ú]*" required>
-								<input type="text" id="pays" pattern="[A-zÀ-ú]*" required>
+								<input type="text" id="cp" value="87000" pattern="[0-9]*" required>
+								<input type="text" id="ville" value="Limoges" pattern="[A-zÀ-ú]*" required>
+								<input type="text" id="pays" value="France" pattern="[A-zÀ-ú]*" required>
 							</div>
 						</div>
 						<div id="autres">
@@ -114,9 +114,9 @@
 							</div>
 
 							<div>
-								<input type="url" id="site" required>
-								<input type="email" id="mail" required>
-								<input type="text" id="tél" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" required>
+								<input type="url" id="site" value="infino.enp.com" required>
+								<input type="email" id="mail" value="infino@gmail.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+								<input type="text" id="tél" value="02 02 02 77 76" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" required>
 								<input type="text" id="fax" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$">
 							</div>
 						</div>
@@ -149,7 +149,7 @@
 				
 				<div id="enregistrement">
 					<div>
-						<p>Date et heure de la dernière modification: Jeudi 20 mars à 10:56</P>
+						<p>Date et heure de la dernière modification: Jeudi 20 mars 2020 à 10:56</P>
 						<p>Employé responsable: Prénom Nom</p>
 					</div>
 					<div id="button">

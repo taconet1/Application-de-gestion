@@ -134,12 +134,18 @@ div#input {
 	width: 45%;
  }
  
+ #code-barre .fa-file-image {
+	border: 1px dashed;
+	font-size: 30px;
+	padding: 5.5% 30% 5.5% 30%;
+}
+ 
 #document{
 	text-align: center;
 	position: relative;
 }
 
-.fa-file-image {
+#document .fa-file-image {
 	border: 1px dashed;
 	font-size: 30px;
 	padding: 15%;
