@@ -3,7 +3,7 @@
 Réalisation application pour la société Pilaf en HTML sans Javascript
 
 ## Compléter  les documents
-Vous mettrez à jour TOUS LES DOCUMENTS que vous aurez réalisés suite au cours, en les enrichissant de la liste des cas d’utilisation (cf doc "Cas d'utilisations à faire").
+Vous mettrez à jour TOUS LES DOCUMENTS que vous aurez réalisés suite au cours, en les enrichissant de la liste des cas d’utilisations (cf doc "Cas d'utilisations à faire").
 
 Exception : pour le diagramme de gantt, vous ajouterez, après l’avoir chiffré bien sûr, 1 cas d’utilisation de votre choix.  
 
