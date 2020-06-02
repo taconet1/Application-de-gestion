@@ -8,6 +8,12 @@
 	width: 100%;
 	margin: 0 1% 0 1%;
 }
+#produit{
+	border:solid 1px black;
+}
+#droite{
+	float: right;
+}
 
 /* Footer */
 footer p {
