@@ -1,0 +1,36 @@
+/* Nav */
+#option a:first-child {
+	font-weight: bold;
+}/* Content */
+#content {
+	width: 100%;
+	margin: 0 1% 0 1%;
+}
+caption{
+	margin-bottom: 2%;
+	font-weight: bold; 
+}
+td{
+	padding: 3% 2% 3% 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer p {
+	margin: 1%;
+}
+
+footer {
+	text-align:center;
+}
