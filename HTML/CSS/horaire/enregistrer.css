@@ -1,7 +1,8 @@
 /* Nav */
 #option a:last-child {
 	font-weight: bold;
-}/* Content */
+}
+/* Content */
 #content {
 	width: 100%;
 	margin: 0 1% 0 1%;
@@ -40,6 +41,11 @@ hr .enter{
 }
 .block{
 	padding-left: 50%; 
+}
+button{
+	padding: 3% 10% 3% 10%;
+	margin-top: 50%;
+	margin-left: 90%;
 }
 #creneau1, #creneau2{
 	border:1px solid black;
