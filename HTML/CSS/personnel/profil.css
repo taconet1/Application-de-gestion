@@ -1,0 +1,223 @@
+main {
+	display: flex;
+}
+
+body {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+hr {
+	margin: 0;
+}
+
+/* Header */
+header {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin: 0 0 0 2%;
+}
+
+#pilaf {
+	width: 6%;
+}
+
+#right {
+	width: 18%;	
+}
+
+#avatar{
+	margin: 0;
+	text-align: center;
+}
+
+#avatar i{
+	font-size: 45px;
+	padding: 3%;
+}
+
+#bas_avatar {
+	margin: 2% 0 2% 0;
+	display: flex;
+}
+
+#bas_avatar p {
+	margin: 0;
+	width: 75%;
+	text-align: center;
+}
+
+#dropdown i {
+	font-size: 110%;
+}
+
+#dropdown-content {
+	width: 15%;
+	margin: 0;
+	display: none;
+	position: absolute;
+	right: 3.5%;
+	background-color: white;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#dropdown-content a {
+	text-align: center;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+#dropdown-content a:hover {
+	background-color: #82b74b;
+}
+
+#bas_avatar:hover #dropdown-content {
+	display: block;
+}
+
+/* Nav */
+nav {
+	width: 15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-right: 1px solid;
+}
+
+nav a {
+	color: black;
+	margin-left: 1%;
+}
+
+#option {
+	display: flex;
+	flex-direction: column;
+}
+
+#option a {
+	text-decoration: none;
+	font-size: 20px;
+	padding: 6%;
+	border-bottom: 1px solid;
+}
+
+#option a:hover {
+	background-color: #f1f1f1;
+}
+
+#option2 {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+#option2 a {
+	margin: 0 5% 5% 5%;
+}
+
+#home {
+	font-size: 35px;
+}
+
+#aide {
+	padding: 1%;
+	font-size: 20px;
+}
+
+/* Content */
+#content {
+	width: 60%;
+	margin-bottom: 0.5%;
+	padding: 0.5% 1.5% 0.5% 1.5%;
+}
+
+#profil p {
+	margin: 4%;
+}
+
+#profil {
+	margin: 1% 0 0 0;
+	display: flex;
+	height: 32%;
+}	
+
+#profil i {
+	border: 1px dashed;
+	font-size: 40px;
+	padding: 6%;
+}
+
+#information {
+	margin: 0 0% 0 1%;
+	width: 40%;
+}
+
+#indication {
+	font-style: italic;
+}
+
+#content .button {
+	float: right;
+	margin: 1% 0 0 0;
+	width: 33.5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Aside */
+aside {
+	width: 25%;
+	padding-top: 2.5%;
+	border-left: 1px solid;
+}
+
+h2 {
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	margin-top: 20%;
+	margin-bottom: 5%;
+	width: 90%;	
+}
+
+label {
+	width: 90%;
+	margin: auto;
+}
+
+input[type=text], input[type=password] {
+	margin: 1% 0 6% 0;
+	width: 90%;
+	padding: 1%;
+	align-self: center;
+}
+
+form .button {
+	align-self: center;
+	width: 90%;
+	margin-top: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+
+input[type=submit], input[type=reset] {
+	width: 120px;
+	padding: 5px;
+}
+
+/* Footer */
+footer p {
+	margin: 1%;
+}
+
+footer {
+	text-align:center;
+}
