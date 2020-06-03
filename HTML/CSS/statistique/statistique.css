@@ -10,14 +10,21 @@
 #gauche{
 	position: relative;
 	float: left;
+	border:1px solid black;
+	margin-bottom: 2%;
 
 }
 #droite{
 	position: relative;
 	float: right;
+	border:1px solid black;
 }
 
 
+
+label, input{
+	margin-top: 20%;
+}
 
 
 
