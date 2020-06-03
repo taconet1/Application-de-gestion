@@ -1,0 +1,77 @@
+/* Nav */
+#option a:last-child {
+	font-weight: bold;
+}/* Content */
+#content {
+	width: 100%;
+	margin: 0 1% 0 1%;
+}
+
+#jour{
+	position: relative;
+	float: left;
+	width: 60%;
+}
+#total{
+	position: relative;
+	float: right;
+}
+.alignement{
+	display: block;
+	margin: 1%;
+}
+
+#total{
+	margin-top: 20%;
+	margin-right: 10%
+}
+
+input, select {
+	padding: 10px;
+	font-size: 12px;
+	margin: 5px 0 5px 0;
+	border: 2px solid black;
+	border-radius: 3px;
+}
+
+hr .enter{
+	color: purple;
+	background-color: purple;
+}
+.block{
+	padding-left: 50%; 
+}
+#creneau1, #creneau2{
+	border:1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer p {
+	margin: 1%;
+}
+
+footer {
+	text-align:center;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Societe PILAF_Application</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../CSS/horaire/enregistrer.css">
+	<link rel="stylesheet" type="text/css" href="../../CSS/form.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+<body>
+	<header>
+		<p id="pilaf">PILAF BIOCOOP</p>
+		<h1>Gestion des horaires</h1>
+		<div id="right">
+			<div id="avatar">
+				<i class='fas fa-user-circle'></i>
+			</div>
+			<div id="bas_avatar">
+				<p>Patrick Lejeune</p>
+				<div id="dropdown">
+					<i class="fas fa-chevron-down"></i>
+					<div id="dropdown-content">
+						<a href="../../profil.html">Mon profil</a>
+						<a href="../../main.html">Se déconnecter</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<hr>
+
+	<main>
+		<nav>
+			<div id="option">
+				<a href="consulter.html">Consulter les horaires</a>
+				<a href="#">Enregistrer des horaires</a>
+			</div>
+			<div id="option2">
+				<a href="../../home.html" id="home"><i class='fas fa-home'></i></a>
+				<a href="../../aide.html" id="aide" target="_blank">Aide</a>
+			</div>
+		</nav>
+		<div id="content">
+			<div id="jour">
+				<h2>Jour : Lundi</h2>
+				<div id="creneau1">
+					<p>Creneau n°1</p>
+					<div class="alignement">
+						<label>Heure de départ :</label>
+						<input type="text" name="depart">
+					</div>
+					<div class="alignement">
+						<label>Heure de fin :</label>
+						<input type="text" name="fin">
+					</div>
+					<div class="block">
+						<label>Temps total</label>
+						<input type="text" name="result" value="4:00">
+					</div>
+				</div>
+				<div id="creneau2">
+					<p>Creneau n°2</p>				
+					<div class="alignement">
+						<label>Heure de départ :</label>
+						<input type="text" name="depart">
+					</div>
+					<div class="alignement">
+						<label class="espace">Heure de fin :</label>
+						<input type="text" name="fin">
+					</div>
+					<div class="block">
+						<label>Temps total</label>
+						<input type="text" name="result" value="4:30">
+					</div>
+				</div>
+
+			</div>
+			<div id="total">
+				<div id="totheure">
+					<label>Heure totale pour le jour : Lundi</label>
+					<hr>
+					<input type="text" name="result" value="8:30"> 
+					<hr>
+					<select name="type" class="scroll">
+							<option value="">Choississez le type</option>
+							<option value="op1">Horaire de travail</option>
+							<option value="op2">Horaire de conges</option>
+						</select>
+				</div>
+			</div>
+
+		</div>
+	</main>
+	<hr>
+	<footer>
+		<p>Copyright © 2020. Tous droits réservés.</p>
+	</footer>
+
+</body>
+</html>
