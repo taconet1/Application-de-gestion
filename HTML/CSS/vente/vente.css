@@ -5,15 +5,57 @@
 
 /* Content */
 #content {
-	width: 100%;
+	width: 90%;
 	margin: 0 1% 0 1%;
 }
-#produit{
-	border:solid 1px black;
-}
+
 #droite{
+	position: relative;
 	float: right;
 }
+#gauche{
+	position: relative;
+	float: left;
+
+}
+
+h2{
+	margin: 1%;
+}
+
+
+#produit, #information, #client, #prix{
+	border:2px solid black;
+	border-radius: 2%;
+	padding: 2% 2% 2% 2%;
+}
+
+.alignement{
+	display: block;
+	margin: 1%;
+}
+input, select {
+	padding: 10px;
+	font-size: 12px;
+	margin: 5px 0 5px 0;
+	border: 2px solid black;
+	border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer */
 footer p {
@@ -23,3 +65,4 @@ footer p {
 footer {
 	text-align:center;
 }
+s

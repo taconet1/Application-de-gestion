@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<title>Societe PILAF_Application</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../../CSS/consultation.css">
+	<link rel="stylesheet" type="text/css" href="../../CSS/vente/vente.css">
 	<link rel="stylesheet" type="text/css" href="../../CSS/form.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 <body>
 	<header>
@@ -34,117 +35,106 @@
 		<nav>
 			<div id="option">
 				<a href="vente.html">Ajout d'une vente</a>
-			</a>
-		</div>
-		<div id="option2">
-			<a href="../../home.html" id="home"><i class='fas fa-home'></i></a>
-			<a href="../../aide.html" id="aide" target="_blank">Aide</a>
-		</div>
-	</nav>
-	<div id="content">
-		<div id="gauche">
-			<div id="produit">
-				<div class="alignement">
-					<label>Reference</label>
-					<input type="text" name="reference">
+			</div>
+			<div id="option2">
+				<a href="../../home.html" id="home"><i class='fas fa-home'></i></a>
+				<a href="../../aide.html" id="aide" target="_blank">Aide</a>
+			</div>
+		</nav>
+		<div id="content">
+			<div id="gauche">
+				<h2>Produit</h2>
+				<div id="produit">
+					
+					<div class="alignement">
+						<label>Reference</label>
+						<input type="text" name="reference">
+					</div>
+					<div class="alignement">
+						<label>Designation</label>
+						<input type="text" name="designation">
+					</div>
+					<div class="alignement">
+						<label>Categorie</label>
+						<select name="categories" required title="Categorie" class="scroll">
+							<option value="">Choississez votre categories</option>
+							<option value="op1">Fruit</option>
+							<option value="op2">Legume</option>
+							<option value="op3">Graine</option>
+						</select>
+					</div>
+					<div class="alignement">
+						<label>Marque</label>
+						<select name="marque" required title="marque" class="scroll">
+							<option value="">Choississez votre marque</option>
+						</select>
+					</div>	
+					<div class="alignement">
+						<label>Quantité</label>
+						<input type="text" name="designation">
+					</div>
+					<div class="alignement">
+						<label>Conditionnement</label>
+						<select name="conditionnement" required title="conditionnement" class="scroll">
+							<option value="">Choississez le type</option>
+							<option value="op1">En sachet</option>
+							<option value="op2">A l'unité</option>
+							<option value="op3">Au kilogramme</option>
+						</select>
+					</div>
 				</div>
-				<div class="alignement">
-					<label>Designation</label>
-					<input type="text" name="designation">
-				</div>
-				<div class="alignement">
-					<label>Categorie</label>
-					<select name="categories" required title="Categorie" class="scroll">
-						<option value="">Choississez votre categories</option>
-						<option value="op1">Fruit</option>
-						<option value="op2">Legume</option>
-						<option value="op3">Graine</option>
-						<option value="op4"></option>
-						<option value="op5"></option>
-						<option value="op6"></option>
-						<option value="op7"></option>
-						<option value="op8"></option>
-					</select>
-				</div>
-				<div class="alignement">
-					<label>Marque</label>
-					<select name="marque" required title="marque" class="scroll">
-						<option value="">Choississez votre marque</option>
-						<option value="op1"></option>
-						<option value="op2"></option>
-						<option value="op3"></option>
-						<option value="op4"></option>
-						<option value="op5"></option>
-						<option value="op6"></option>
-						<option value="op7"></option>
-						<option value="op8"></option>
-					</select>
-				</div>	
-				<div class="alignement">
-					<label>Quantité</label>
-					<input type="text" name="designation">
-				</div>
-				<div class="alignement">
-					<label>Conditionnement</label>
-					<select name="conditionnement" required title="conditionnement" class="scroll">
-						<option value="">Choississez le type</option>
-						<option value="op1">En sachet</option>
-						<option value="op2">A l'unité</option>
-						<option value="op3">Au kilogramme</option>
-						<option value="op4"></option>
-						<option value="op5"></option>
-						<option value="op6"></option>
-						<option value="op7"></option>
-						<option value="op8"></option>
-					</select>
+				<div id="client">
+					<div class="alignement">
+						<label>ID Client</label>
+						<input type="text" name="ref client">
+					</div>
+					<div class="alignement">
+						<label>Reference Client</label>
+						<input type="text" name="reference client">
+					</div>
 				</div>
 			</div>
-			<div id="client">
-				<div class="alignement">
-					<label>ID Client</label>
-					<input type="text" name="ref client">
+			<div id="droite">
+				<h2>Prix</h2>
+				<div id="prix">
+					
+					<div class="alignement">
+						<label>TVA</label>
+						<input type="text" name="TVA">
+					</div>
+					<div class="alignement">
+						<label>Prix d'achat HT</label>
+						<input type="text" name="prixachatHT">
+					</div>
+					<div class="alignement">
+						<label>Code de reduction</label>
+						<input type="text" name="codereduc">
+					</div>
+					<div class="alignement">
+						<label>Prix Net</label>
+						<input type="text" name="prixnet">
+					</div>
 				</div>
-				<div class="alignement">
-					<label>Reference Client</label>
-					<input type="text" name="reference client">
-				</div>
-			</div>
-		</div>
-		<div id="droite">
-			<div id="prix">
-				<div class="alignement">
-					<label>TVA</label>
-					<input type="text" name="TVA">
-				</div>
-				<div class="alignement">
-					<label>Prix d'achat HT</label>
-					<input type="text" name="prixachatHT">
-				</div>
-				<div class="alignement">
-					<label>Code de reduction</label>
-					<input type="text" name="codereduc">
-				</div>
-				<div class="alignement">
-					<label>Prix Net</label>
-					<input type="text" name="prixnet">
-				</div>
-			</div>
-			<div id="information">
-				<div class="alignement">
-					<label>Vendu le</label>
-					<input type="date" name="date">
-				</div>
-				<div class="alignement">
-					<label>à</label>
-					<input type="time" name="heure">
+				<h2>Information</h2>
+				<div id="information">
+					
+					<div class="alignement">
+						<label>Vendu le</label>
+						<input type="date" name="date">
+					</div>
+					<div class="alignement">
+						<label>à</label>
+						<input type="time" name="heure">
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</main>
-<footer>
-	<p>Copyright © 2020. Tous droits réservés.</p>
-</footer>
+
+
+	</main>
+	<footer>
+		<p>Copyright © 2020. Tous droits réservés.</p>
+	</footer>
 
 </body>
 </html>
