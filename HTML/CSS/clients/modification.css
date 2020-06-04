@@ -41,12 +41,14 @@ main p {
 	text-decoration: underline;
 }
 
-#haut i {
+#haut a:first-child {
 	margin-left: 2%;
 	float: left;
 	border: 1px dashed;
 	font-size: 30px;
 	padding: 7% 6% 7% 6%;
+	text-decoration: none;
+	color: black;
 }
 
 #infos {
@@ -143,16 +145,19 @@ div#input {
 #document{
 	text-align: center;
 	position: relative;
+	display: flex;
+	flex-direction: column;
 }
 
 #document .fa-file-image {
 	border: 1px dashed;
 	font-size: 30px;
+	margin: 1%;
 	padding: 15%;
 }
 
-#droite p:last-child {
-	text-decoration: underline;
+#droite a{
+	color: black;
 }
 
 /* Enregistrement */
