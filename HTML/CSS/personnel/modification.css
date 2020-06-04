@@ -1,5 +1,6 @@
 main {
 	display: flex;
+	
 }
 
 body {
@@ -15,25 +16,130 @@ hr {
 /* Content */
 #content {
 	width: 100%;
-	margin-bottom: 0.5%;
-	padding: 0.5% 1.5% 0.5% 1.5%;
+}
+
+#content div {
+	margin: 0.4%;
+	margin-left: 1%;
 }
 
 #haut p {
 	margin: 4%;
 }
 
-#haut {
-	margin: 1% 0 0 0;
+#haut{
+	width: 115%;
 	display: flex;
-	height: 32%;
+	justify-content: space-between;
 }	
 
 .material-icons {
 	border: 1px dashed;
-	font-size: 40px;
-	padding: 6%;
+	padding: 7% 6% 7% 6%;
+	height: 100%;
+	align-self: center;
 }
+
+/* Infos principal */
+#principal p {
+	margin: 1% 0 1% 0;
+}
+
+div #principal {
+	width: 100%;
+	align-self: flex-end;
+	margin-left: 2%;
+}
+
+#autres p {
+	margin: 1% 0 3% 0;
+}
+
+#autres p:first-child {
+	margin: 2% 0 0 0;
+	text-decoration: underline;
+}
+
+#autres {
+	width: 500px;
+	align-self: flex-end;
+}
+
+#autres a {
+	color: black;
+	text-decoration: none;
+	padding: 6%;
+	font-size: 20px;
+}
+
+#état_civil {
+	width: 100%;
+	align-self: flex-end;
+	display: flex;
+	justify-content: space-between;
+}
+
+#état_civil div label, #haut label, #bas label {
+	display: block; 
+	width: 80px;
+	float: left;
+	margin-bottom: 1%;
+	margin-top: 1%;
+}
+
+#autres label {
+	float: none;
+	width: 120px;
+}
+
+#état_civil div label {
+	width: 160px;
+}
+
+#haut input, #bas input, #haut select, #bas select, #état_civil input, #état_civil select {
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+
+/* Coordonnées & Adresses */
+
+#bas{
+	margin: 1% 0 0 0;
+	display: flex;
+	height: 32%;
+	width: 91%;
+	justify-content: space-between;
+}
+
+#coordonnées label {
+	display: inline;
+	float: none;
+	margin-right: 1%;
+	margin-left: 1%;
+}
+
+#coordonnées input {
+	margin-right: 5%;
+}
+
+#adresse label {
+	width: 160px;
+}
+
+#contrat label {
+	width: 120px;
+}
+
+#contrat p {
+	margin-bottom: 0;
+}
+
+#document i {
+	font-size: 20px;
+	padding: 2%;
+}
+
 
 /* Nav */
 #option a:last-child {
@@ -42,23 +148,21 @@ hr {
 
 
 /* Enregistrement */
-#enregistrement {
-	padding: 0.5% 1% 0 1%;
-	margin: 0;
+div #enregistrement {
 	border-top: 1px solid;;
 	display: flex;
 	align-items: flex-end;
-	width: 100%;
+	width: 127%;
+	margin: 0;
 	justify-content: space-between;
 }
 
 #enregistrement p {
-	margin:0;
+	margin: 0;
 }
 
 form .button {
 	align-self: center;
-	width: 90%;
 	margin-top: 10%;
 	display: flex;
 	justify-content: space-between;
@@ -70,9 +174,10 @@ input[type=submit], input[type=reset] {
 }
 
 input[type=reset] {
-	margin-left: 8%;
+	margin-left: 5%;
 }
 
 #button {
+	display: flex;
 	width: 24%;
 }
