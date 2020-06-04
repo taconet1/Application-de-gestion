@@ -67,6 +67,7 @@
 					<input type="text" id="nom" value="Lejeune" pattern="[A-zÀ-ú]*" required>
 					<label for="prénom">Prénom*</label>
 					<input type="text" id="prénom" value="Patrick" pattern="[A-zÀ-ú]*" required>
+					<input type="file" name="avatar" accept="image/png, image/jpeg">
 				</div>
 				<div id="état_civil">
 						<label for="naissance">Date de naissance*</label>
@@ -99,7 +100,7 @@
 				<div id="autres">
 					<p>Historique de modification</p>
 					<p>Créé le: Jeudi 20 mars 1999 à 10:56</p>
-					<p>Salaire mensuel: 2 034€<i class="far fa-eye"></i></p>
+					<p>Salaire mensuel: 2 034€<a href="comptabilité.html" target="_blank"><i class="far fa-eye"></i></a></p>
 					<label for="travail">Horaires de travail</label>
 					<input type="datetime-local" id="travail" value="2020-05-01T13:30" min="2020-01-01T00:00" max="2030-12-31T:00:00">
 				</div>
@@ -130,7 +131,8 @@
 				<label for="sortie">Date de sortie*</label>
 				<input type="date" id="sortie" min="1900-01-01" max="2020-12-31" required>
 				<div id="document">
-					<p>Document contrat<i class="far fa-file-pdf"></i></p>
+					<p><i class="far fa-file-pdf"></i>Document contrat</p>
+					<input type="file" name="file" accept="application/pdf">
 				</div>
 			</div>
 			<div id="enregistrement">
