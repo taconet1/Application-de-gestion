@@ -14,7 +14,14 @@ td{
 	padding: 3% 2% 3% 1%;
 }
 
+#tableau{
+	overflow-x:auto; 
+}
 
+
+.heure{
+	text-align: center;
+}
 
 
 
