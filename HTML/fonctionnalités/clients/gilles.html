@@ -36,7 +36,8 @@
 		<nav>
 			<div id="option">
 				<a href="consultation.html">Liste des clients</a>
-				<a href="création.html" style="font-weight: bold">Créer client</a>
+				<a href="création.html">Créer client</a>
+				<a href="modification.html">Modifier client</a>
 			</div>
 			<div id="option2">
 				<a href="../../home.html" id="home"><i class='fas fa-home'></i></a>
@@ -49,26 +50,31 @@
 					<div id="haut">
 						<i class="material-icons">add_a_photo</i>
 						<div id="civilité">
+							<p>Numéro: 000002</p>
 							<p>Civilité*</p>
-							<input type="checkbox" id="monsieur">
+							<input type="checkbox" id="monsieur" >
 							<label for="monsieur">M.</label>
-							<input type="checkbox" id="madame">
-							<label for="madame">Mme.</label><br>
+							<input type="checkbox" id="madame" checked>
+							<label for="madame">Mme.</label>
 							<input type="file" name="avatar" accept="image/png, image/jpeg">
+						</div>
+						<div id="modification">
+							<p>Historique de modification</p>
+							<p>Créé le: Jeudi 20 janvier 2019 à 10:56</p>
 						</div>
 					</div>
 					<div id="infos">
 						<div>
 							<label for="nom">Nom*</label>
-							<input type="text" id="nom" pattern="[A-zÀ-ú]*" required>
+							<input type="text" id="nom" value="Gilles" pattern="[A-zÀ-ú]*" required>
 							<label for="prénom">Prénom*</label>
-							<input type="text" id="prénom" pattern="[A-zÀ-ú]*" required>
+							<input type="text" id="prénom" value="Angelica" pattern="[A-zÀ-ú]*" required>
 						</div>
 						<div>
 							<label for="mail">Email*</label>
-							<input type="text" id="mail" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+							<input type="email" id="mail" value="gangelica@gmail.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
 							<label for="tél">Tél*</label>
-							<input type="text" id="tél" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" required>
+							<input type="number" id="tél" value="0635886789" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" required>
 						</div>
 						<div>
 							<div id="label">
@@ -80,16 +86,16 @@
 								<label for="pays">Pays*</label>
 							</div>
 							<div id="input">
-								<input type="date" id="naissance" min="1900-01-01" max="2020-12-31" required>
-								<input type="text" id="rue" pattern="[A-zÀ-ú0-9]*" required>
+								<input type="date" id="naissance" value="1990-12-22" min="1900-01-01" max="2020-12-31" required>
+								<input type="text" id="rue" value="25 de la Rue" pattern="[A-zÀ-ú0-9]*" required>
 								<input type="text" id="complément" pattern="[A-zÀ-ú0-9]*">
-								<input type="text" id="cp" pattern="[0-9]*" required>
-								<input type="text" id="ville" pattern="[A-zÀ-ú]*" required>
-								<input type="text" id="pays" pattern="[A-zÀ-ú]*" required>
+								<input type="text" id="cp" value="87000" pattern="[0-9]*" required>
+								<input type="text" id="ville" value="Path" pattern="[A-zÀ-ú]*" required>
+								<input type="text" id="pays" value="France" pattern="[A-zÀ-ú]*" required>
 							</div>
 						</div>
 						<div>
-							<input type="checkbox" id="infos_mail">
+							<input type="checkbox" id="infos_mail" checked>
 							<label for="infos_mail">Recevoir des informations par email</label><br>
 							<input type="checkbox" id="infos_mobile">
 							<label for="infos_mobile">Recevoir des informations par téléphone</label>
@@ -99,11 +105,11 @@
 				
 				<div id="droite">
 					<div id="content-droite">
-						<p>Solde carte: 0.00€</p>
+						<p>Solde carte: 0.0€</p>
 						<label for="num_carte">Numéro de la carte: </label>
-						<input type="text" id="num_carte" pattern="[A-zÀ-ú]*" required><br>
+						<input type="text" id="num_carte" value="5 901234 123457" pattern="[0-9]*" required><br>
 						<div id="code-barre">
-							<i class="fas fa-file-image"></i>
+							<img src="../../images/code-barre2.png">
 						</div>
 						
 						<div id="document">
@@ -116,10 +122,9 @@
 				
 				<div id="enregistrement">
 					<div>
-						<p>Date et heure de création: Jeudi 20 mars 2019 à 10:56</P>
+						<p>Date et heure de la dernière modification: Jeudi 20 janvier 2019 à 10:56</P>
 						<p>Employé responsable: Prénom Nom</p>
 					</div>
-					
 					<div id="button">
 						<input type="submit" id="enregistrer" value="Enregistrer">
 						<input type="reset" id="annuler" value="Annuler">

@@ -48,7 +48,7 @@
 			<form>
 				<div id="gauche">
 					<div id="haut">
-						<a href="#" title="Importer une photo"><i class="material-icons">add_a_photo</i></a>
+						<i class="material-icons">add_a_photo</i>
 						<div id="civilité">
 							<p>Numéro: 000001</p>
 							<p>Civilité*</p>
@@ -56,10 +56,11 @@
 							<label for="monsieur">M.</label>
 							<input type="checkbox" id="madame">
 							<label for="madame">Mme.</label>
+							<input type="file" name="avatar" accept="image/png, image/jpeg">
 						</div>
 						<div id="modification">
 							<p>Historique de modification</p>
-							<p>Créé le: Jeudi 20 mars 2021 à 10:56</p>
+							<p>Créé le: Jeudi 20 mars 2019 à 10:56</p>
 						</div>
 					</div>
 					<div id="infos">
@@ -88,7 +89,7 @@
 								<input type="date" id="naissance" value="1995-07-22" min="1900-01-01" max="2020-12-31" required>
 								<input type="text" id="rue" value="25 de la Rue" pattern="[A-zÀ-ú0-9]*" required>
 								<input type="text" id="complément" pattern="[A-zÀ-ú0-9]*">
-								<input type="text" id="cp" value="56894" pattern="[0-9]*" required>
+								<input type="text" id="cp" value="87000" pattern="[0-9]*" required>
 								<input type="text" id="ville" value="BelleVille" pattern="[A-zÀ-ú]*" required>
 								<input type="text" id="pays" value="France" pattern="[A-zÀ-ú]*" required>
 							</div>
@@ -114,7 +115,7 @@
 						<div id="document">
 							<p>Formulaire adhésion papier*</p>
 							<i class="fas fa-file-image"></i>
-							<a href="#">Importer l'adhésion papier</a>
+							<input type="file" name="avatar" accept="image/png, image/jpeg">
 						</div>
 					</div>
 				</div>
