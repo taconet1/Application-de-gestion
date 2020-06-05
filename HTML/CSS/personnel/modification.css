@@ -68,8 +68,9 @@ div #principal {
 #autres a {
 	color: black;
 	text-decoration: none;
-	padding: 6%;
-	font-size: 20px;
+	padding: 1%;
+	margin: 5%;
+	font-size: 25px;
 }
 
 #état_civil {
