@@ -45,7 +45,7 @@
 			</div>
 			<div id="option2">
 				<a href="../../home.html" id="home"><i class='fas fa-home'></i></a>
-				<a href="../../aide.html" id="aide" target="_blank">Aide</a>
+				<a href="../../en_cours_de_construction.html" id="aide" target="_blank">Aide</a>
 			</div>
 		</nav>
 								
@@ -55,17 +55,9 @@
 					<img src="../../images/catalogue.png" alt="Catalogue alimentaire bio">
 					
 					<div id="infos_catalogue">
-						<div id="label">
 							<p>Numéro: 000001</p>
-							<label for="nom">Nom*</label>
+							<label for="nom">Nom*</label><input type="text" id="nom" value="Estivalement bio" pattern="[A-zÀ-ú]*" required><br>
 							<label for="fournisseur">Fournisseur*</label>
-							<label for="collection">Collection*</label>
-							<label for="catégorie">Catégories*</label>
-						</div>
-						
-						<div id="input">
-							<input type="text" id="nom" pattern="[A-zÀ-ú]*" required>
-
 							<select id="fournisseur" name="fournisseur">
 								<option>NaturéO</option>
 								<option>Amélie et Yoann Cosse</option>
@@ -76,8 +68,8 @@
 								<option>Delouis</option>
 								<option>EARL Fontaine de Berle</option>
 								<option>-- Ajouter --</option>
-							</select>
-							
+							</select><br>
+							<label for="collection">Collection*</label>
 							<select id="collection" name="collection">
 								<option>Annuel</option>
 								<option>Promotionnel</option>
@@ -85,27 +77,21 @@
 								<option>Saisonnière</option>
 								<option>Thématique</option>
 								<option>-- Ajouter --</option>
-							</select>
-							
-							<input type="text" id="catégorie" value="Fruits et légumes, Vrac, Viande" required>
-						</div>
+							</select><br>
+							<label for="catégorie">Catégories*</label>
+							<input type="text" id="catégorie" value="Fruits et légumes, Vrac, Viande" required><br>
+							<input type="file" name="avatar" accept="image/png, image/jpeg">
 					</div>
-					
 					<div id="modification">
-						<label for="data_cata">Date du catalogue*</label>
-						<input type="date" id="data_cata" value="2018-07-22" min="1900-01-01" max="2020-12-31" required>
-						<p>Historique de modification</p>
-						<p>Créé le: Jeudi 20 mars 2021 à 10:56</p>
-						<div id="document">
-							<i class="far fa-file-pdf"></i>
-							<p>Document relatif</p>
-						</div>
+						<label for="date_cata">Date du catalogue*</label><input type="date" id="date_cata" value="2019-05-15" min="1900-01-01" max="2020-12-31" required><br>
+						<p><i class="far fa-file-pdf"></i> Document relatif</p><input type="file" name="avatar" accept="application/pdf">
 					</div>
 				</div>
 				<div id="bas">
 					<table>
 						<thead>
 							<tr>
+								<th></th>
 								<th></th>
 								<th>Référence</th>
 								<th>Image</th>
@@ -122,7 +108,8 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td><input type="checkbox"></td>
+								<td><i class="far fa-trash-alt"></i></td>
+								<td><i class="far fa-edit"></i></td>
 								<td>PPL45 874</td>
 								<td class="carré"><img src="../../images/pinklady.jpg" alt="Pomme Pink Lady"></td>
 								<td>Pomme Pink Lady</td>
@@ -137,6 +124,7 @@
 							</tr>
 							<tr>
 								<td><i class="fas fa-plus-circle"></i></td>
+								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
