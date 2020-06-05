@@ -50,17 +50,9 @@
 				<div id="haut">
 					<img id="img_article" src="../../images/pinklady.jpg" alt="Pomme Pink Lady">	
 					<div id="infos_produit">
-						<div id="label">
 							<p>Référence: PPL45 874</p>
-							<label for="nom">Désignation*</label>
+							<label for="nom">Désignation*</label><input type="text" id="nom" value="Pomme" pattern="[A-zÀ-ú]*" required><br>
 							<label for="fournisseur">Fournisseur*</label>
-							<label for="catégorie">Catégories*</label>
-							<p>Prix de vente TTC: 2.3€</p>
-						</div>
-						
-						<div id="input">
-							<input type="text" id="nom" value="Pomme" pattern="[A-zÀ-ú]*" required>
-
 							<select id="fournisseur" name="fournisseur">
 								<option>NaturéO</option>
 								<option>Amélie et Yoann Cosse</option>
@@ -71,10 +63,10 @@
 								<option>Delouis</option>
 								<option>EARL Fontaine de Berle</option>
 								<option>-- Ajouter --</option>
-							</select>
-							
-							<input type="text" id="catégorie" value="Fruits et légumes" required>
-						</div>
+							</select><br>
+							<label for="catégorie">Catégories*</label><input type="text" id="catégorie" value="Fruits et légumes" required><br>
+							<p>Prix de vente TTC: 2.3€</p>
+							<input type="file" name="image" accept="image/png, image/jpeg">
 					</div>
 					
 					<div id="modification">

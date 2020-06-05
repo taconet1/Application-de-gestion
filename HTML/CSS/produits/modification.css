@@ -17,62 +17,45 @@ main p {
 	border: 1px dashed;
 	font-size: 40px;
 	padding: 6%;
+	height: 5%;
 }
 
-
-#haut #img_article {
-	width: 12%;
-	height: 2%;
-	padding: 1%;
-	align-self: center;
+#img_article {
+	width: 15%;
+	height: 10%;
+	align-self: flex-end;
 }
 
 div#haut {
-	width: 100%;
 	display: flex;
-	margin: 0 1% 1% 1%;
-	margin-bottom: 0;
-}
-
-#infos_produit p {
-	margin-bottom: 1%;
-	margin-top: 10%;
+	margin: 1%;
 }
 
 #infos_produit input, #infos_produit select {
-	margin: 5% 0 5% 5%;
+	margin-bottom: 1%;
+	margin-top: 1%;
 }
 
 #infos_produit label {
-	margin: 5% 0 5% 0;
+	display: block; 
+	float: left;
+	width: 100px;
+	margin-bottom: 1%;
+	margin-top: 1%;
+	margin-right: 2%;
 }
 
 #infos_produit {
-	width: 80%;
 	margin-left: 2%;
-	display: flex;
+	width: 500px;
 }
 
-#infos_produit div:nth-child(2) {
-	margin-top: 3.5%;
-	margin-left: 5%;
-}
-
-#infos_produit div {
-	display: flex;
-	flex-direction: column;
+#infos_produit, #modification {
+	align-self: flex-end;
 }
 
 #modification {
-	width: 40%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
 	margin: 1% 1% 0 1%;
-}
-
-#modification p:nth-child(3) {
-	text-decoration: underline;
 }
 
 #modification p {
@@ -80,12 +63,7 @@ div#haut {
 }
 
 img {
-	width: 50%;
-}
-
-#modification p:nth-child(2) {
-	margin-top: 5%;
-	margin-bottom: 4%;
+	width: 200px;
 }
 
 /* Centre */
@@ -96,7 +74,7 @@ img {
 
 #centre div{
 	margin-top: 0.4%;
-	margin-bottom: 1%;
+	margin-bottom: 0.4%;
 }
 
 #centre input, #centre select{
@@ -104,8 +82,9 @@ img {
 	margin-right: 2%;
 }
 
-#description {
+div #description {
 	display: flex;
+	margin-bottom: 0;
 }
 
 #description div{
@@ -119,7 +98,8 @@ img {
 }
 
 textarea {
-	padding: 5%;
+	padding: 2%;
+	height: 60px;
 	margin-top: 1%;
 	resize: none;
 }
@@ -148,6 +128,10 @@ table i {
 
 tr th:last-child, tr th:nth-child(3) {
 	width: 150px;
+}
+
+th, td {
+	text-align: center;
 }
 
 /* Enregistrement */
