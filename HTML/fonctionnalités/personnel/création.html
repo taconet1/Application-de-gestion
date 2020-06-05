@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Societe PILAF_Application</title>
+	
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../CSS/personnel/modification.css">
+	<link rel="stylesheet" type="text/css" href="../../CSS/form.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+	<header>
+		<p id="pilaf">PILAF BIOCOP</p>
+		<h1>Personnels</h1>
+		<div id="right">
+			<div id="avatar">
+				<i class='fas fa-user-circle'></i>
+			</div>
+			<div id="bas_avatar">
+				<p>Patrick Lejeune</p>
+				<div id="dropdown">
+					<i class="fas fa-chevron-down"></i>
+					<div id="dropdown-content">
+						<a href="../../profil.html">Mon profil</a>
+						<a href="main.html">Se déconnecter</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<hr>
+	
+	<main>
+		<nav>
+			<div id="option">
+				<a href="consultation.html">Liste des personnels</a>
+				<a href="création.html">Ajouter personnel</a>
+			</div>
+			<div id="option2">
+				<a href="../../home.html" id="home"><i class='fas fa-home'></i></a>
+				<a href="../../en_cours_de_construction.html" id="aide" target="_blank">Aide</a>
+			</div>
+		</nav>
+		<form>
+		<div id="content">
+			<div id="haut">
+				<i class="material-icons">add_a_photo</i>
+				<div id="principal">
+					<p>Identifiant: </p>
+					<label for="poste">Poste*</label>
+					<select id="poste" name="poste">
+						<option></option>
+						<option>Caissier</option>
+						<option>Secrétaire</option>
+						<option>Gestionnaire</option>
+						<option>Cadre commercial</option>
+						<option>Responsable des caisses</option>
+						<option>-- Ajouter --</option>
+					</select><br>
+					
+					<label for="civilité">Civilité*</label>
+					<select id="civilité" name="civilité">
+						<option></option>
+						<option>M.</option>
+						<option>Mme.</option>
+					</select><br>
+					<label for="nom">Nom*</label>
+					<input type="text" id="nom" pattern="[A-zÀ-ú]*" required><br>
+					<label for="prénom">Prénom*</label>
+					<input type="text" id="prénom" pattern="[A-zÀ-ú]*" required><br>
+					<input type="file" name="avatar" accept="image/png, image/jpeg">
+				</div>
+				<div id="autres">
+					<p style="text-decoration: none">Salaire mensuel: 0€<a href="../../en_cours_de_construction.html" title="Voir fiche de paye" target="_blank"><i class="far fa-eye"></i></a></p>
+					<p>Horaires de travail<a href="../horaires_conges/enregistrer.html" title="Horaires de travail" target="_blank"><i class="far fa-calendar-alt"></i></a></p>
+				</div>
+			</div>
+			<div id="coordonnées">
+				<label for="mail">Email*</label>
+				<input type="email" id="mail" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+				<label for="tél">Tél</label>
+				<input type="text" id="tél" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" required>
+				<label for="mobile">Mobile*</label>
+				<input type="text" id="mobile" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" required>
+			</div>
+			<div id="état_civil">
+				<div>
+				<label for="naissance">Date de naissance*</label>
+						<input type="date" id="naissance" min="1900-01-01" max="2020-12-31" required><br>
+						<label for="pays_naissance">Pays de naissance*</label>
+						<select id="pays_naissance" name="pays_naissance">
+							<option></option>
+							<option>France</option>
+							<option>Etats-Unis</option>
+							<option>Thailand</option>
+						</select><br>
+						<label for="nationalité">Nationalité*</label>
+						<select id="nationalité" name="nationalité">
+							<option></option>
+							<option>Française</option>
+							<option>Américaine</option>
+							<option>Thailandaise</option>
+						</select>
+				</div>
+				<div>
+				<label for="ss">N° de sécurité sociale*</label>
+						<input type="text" id="ss" pattern="[0-9]*" required><br>
+						<label for="familiale">Situation familiale*</label>
+						<select id="familiale" name="familiale">
+							<option></option>
+							<option>Célibataire</option>
+							<option>Séparé(e)</option>
+							<option>Divorcé(e)</option>
+							<option>Veuf(ve)</option>
+							<option>Marié(e)</option>
+							<option>Pacsé(e)</option>
+						</select><br>
+						<label for="enfants">Nombre d'enfants*</label>
+						<input type="number" id="enfants" value="0" required>
+				</div>
+						
+						
+				</div>
+			
+			<div id="bas">
+				<div id="adresse">
+					<label for="rue">N° et nom de la voie*</label>
+					<input type="text" id="rue" pattern="[A-zÀ-ú0-9]*" required><br>
+					<label for="complément">Complément d'adresse</label>	
+					<input type="text" id="complément" pattern="[A-zÀ-ú0-9]*"><br>
+					<label for="cp">Code postal*</label>
+					<input type="text" id="cp" pattern="[0-9]*" required><br>
+					<label for="ville">Ville*</label>
+					<input type="text" id="ville" pattern="[A-zÀ-ú]*"><br>
+					<label for="pays">Pays*</label>
+					<input type="text" id="pays" pattern="[A-zÀ-ú]*"><br>
+				</div>
+				<div id="contrat">
+					<label for="entrée">Date d'entrée*</label>
+					<input type="date" id="entrée" min="1900-01-01" max="2020-12-31" required><br>
+					<label for="sortie">Date de sortie*</label>
+					<input type="date" id="sortie" min="1900-01-01" max="2020-12-31" required><br>
+					<div id="document">
+						<p><i class="far fa-file-pdf"></i>Document relatif</p>
+						<input type="file" name="file" accept="application/pdf">
+					</div>
+				</div>
+			</div>
+			<div id="enregistrement">
+					<div>
+						<p>Date et heure de création: Jeudi 20 mars 2019 à 10:56</P>
+						<p>Employé responsable: Prénom Nom</p>
+					</div>
+					<div id="button">
+						<input type="submit" id="enregistrer" value="Enregistrer">
+						<input type="reset" id="annuler" value="Annuler">
+					</div>
+			</div>
+		</div>
+		</form>
+		
+	</main>
+	
+	<hr>
+	<footer>
+		<p>Copyright © 2020. Tous droits réservés.</p>
+	</footer>
+
+</body>
+</html>

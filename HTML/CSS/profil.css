@@ -7,6 +7,10 @@ body {
 	margin-right: 0;
 }
 
+p {
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
 
 hr {
 	margin: 0;
@@ -110,15 +114,15 @@ nav a {
 	padding: 0.5% 1.5% 0.5% 1.5%;
 }
 
-#profil p {
-	margin: 4%;
-}
-
 #profil {
-	margin: 1% 0 0 0;
+	margin: 1% 0 2% 0;
 	display: flex;
-	height: 32%;
 }	
+
+#profil p, #état_civil p {
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
 
 #profil i {
 	border: 1px dashed;
@@ -141,6 +145,17 @@ nav a {
 	width: 33.5%;
 	display: flex;
 	justify-content: space-between;
+}
+
+#coordonnées p {
+	display: inline-block;
+	margin-right: 5%;
+}
+
+#état_civil div {
+	display: inline-block;
+	margin-right: 4%;
+	margin-bottom: 1%;
 }
 
 /* Aside */
