@@ -1,37 +1,91 @@
 /* Nav */
 #option a:first-child {
 	font-weight: bold;
-}/* Content */
+}
+
+/* Content */
 #content {
 	width: 100%;
 	margin: 0 1% 0 1%;
 }
-caption{
-	margin-bottom: 2%;
-	font-weight: bold; 
+
+#titre{
+	margin-top: 1%;
+	margin-bottom:1%;
 }
-td{
-	padding: 3% 2% 3% 1%;
+
+label{
+	font-size: 20px;
+	font-weight: bold; 
+
 }
 
 #tableau{
 	overflow-x:auto; 
 }
 
-
-.heure{
+td{
 	text-align: center;
+	font-weight: bold;
 }
 
+td:not(.heure):not(.jour){
+	margin: 1% 1% 1% 1%;
+}
 
+.heure{	
+	border: 1px solid black;
+	padding: 1% 2% 1% 2%;
+}
 
+.jour{
+	border: 1px solid black;
+	padding: 0% 1% 0% 1%;
+}
 
+.travail{
+	background-color: green;
+}
 
+#legende h2{
+	margin: 0%;
+	text-decoration: underline;
+}
 
+#legende{
+	border: 1px double black;
+	margin-right: 85%;
+	padding: 1% 1% 1% 1%;
+}
 
+#travailegende{
+	margin-left: 10%;
+	padding: 1% 25% 1% 1%;
+	color: green;
+	background-color: green;
+}
 
+#congeslegende{
+	margin-left: 10%;
+	padding: 1% 25% 1% 1%;
+	color: orange;
+	background-color: orange;
+}
 
+.conges{
+	background-color: orange; 
+}
 
+.empty{
+	background-color: grey ;
+}
+
+table{
+	margin-bottom: 3%;
+}
+
+.alignement{
+}
 
 /* Footer */
 footer p {
