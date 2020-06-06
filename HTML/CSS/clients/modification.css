@@ -28,8 +28,8 @@ main p {
 }
 
 #civilité {
+	width: 40%;
 	margin-left: 2%;
-	margin-right: 25%;
 }
 
 #civilité p {
@@ -38,10 +38,11 @@ main p {
 
 #modification p:first-child {
 	margin: 3% 0 3% 0;
+	width: 100%;
 	text-decoration: underline;
 }
 
-#haut a:first-child {
+#haut i {
 	margin-left: 2%;
 	float: left;
 	border: 1px dashed;
@@ -156,8 +157,8 @@ div#input {
 	padding: 15%;
 }
 
-#droite a{
-	color: black;
+#droite input {
+	margin: auto;
 }
 
 /* Enregistrement */

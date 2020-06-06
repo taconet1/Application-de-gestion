@@ -41,7 +41,7 @@
 			</div>
 			<div id="option2">
 				<a href="../../home.html" id="home"><i class='fas fa-home'></i></a>
-				<a href="../../aide.html" id="aide" target="_blank">Aide</a>
+				<a href="../../en_cours_de_construction.html" id="aide" target="_blank">Aide</a>
 			</div>
 		</nav>
 								
@@ -50,17 +50,9 @@
 				<div id="haut">
 					<img id="img_article" src="../../images/pinklady.jpg" alt="Pomme Pink Lady">	
 					<div id="infos_produit">
-						<div id="label">
 							<p>Référence: PPL45 874</p>
-							<label for="nom">Désignation*</label>
+							<label for="nom">Désignation*</label><input type="text" id="nom" value="Pomme" pattern="[A-zÀ-ú]*" required><br>
 							<label for="fournisseur">Fournisseur*</label>
-							<label for="catégorie">Catégories*</label>
-							<p>Prix de vente TTC: 2.3€</p>
-						</div>
-						
-						<div id="input">
-							<input type="text" id="nom" value="Pomme" pattern="[A-zÀ-ú]*" required>
-
 							<select id="fournisseur" name="fournisseur">
 								<option>NaturéO</option>
 								<option>Amélie et Yoann Cosse</option>
@@ -71,16 +63,16 @@
 								<option>Delouis</option>
 								<option>EARL Fontaine de Berle</option>
 								<option>-- Ajouter --</option>
-							</select>
-							
-							<input type="text" id="catégorie" value="Fruits et légumes" required>
-						</div>
+							</select><br>
+							<label for="catégorie">Catégories*</label><input type="text" id="catégorie" value="Fruits et légumes" required><br>
+							<p>Prix de vente TTC: 2.3€</p>
+							<input type="file" name="image" accept="image/png, image/jpeg">
 					</div>
 					
 					<div id="modification">
-						<img src="../../images/code-barre.png">
+						<img src="../../images/code-barre.png" alt="Code-barre">
 						<p>Code barre: 1 234567 890128</p>
-						<p>Historique de modification</p>
+						<p style="text-decoration: underline">Historique de modification</p>
 						<p>Créé le: Jeudi 20 mars 2021 à 10:56</p>
 					</div>
 				</div>
@@ -148,11 +140,11 @@
 					<div id="description">
 						<div>
 							<label for="infos_nutri">Informations nutritionnelle</label>
-							<textarea id="story" name="story"></textarea>
+							<textarea id="infos_nutri" name="infos_nutri"></textarea>
 						</div>
 						<div>
 							<label for="ingrédients">Ingrédients</label>
-							<textarea id="story" name="story"></textarea>
+							<textarea id="ingrédients" name="ingrédients"></textarea>
 						</div>
 					</div>
 				</div>

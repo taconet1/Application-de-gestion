@@ -41,7 +41,7 @@
 			</div>
 			<div id="option2">
 				<a href="../../home.html" id="home"><i class='fas fa-home'></i></a>
-				<a href="../../aide.html" id="aide" target="_blank">Aide</a>
+				<a href="../../en_cours_de_construction.html" id="aide" target="_blank">Aide</a>
 			</div>
 		</nav>
 
@@ -50,17 +50,11 @@
 					
 						<i class="material-icons">add_a_photo</i>
 						<div id="infos_fournisseur">
-						
-							<div class="label">
 								<label for="nom">Nom*</label>
+								<input type="text" id="nom" pattern="[A-zÀ-ú]*" required><br>
 								<label for="société">Société*</label>
-								<label for="catégorie">Catégories*</label>
-							</div>
-							
-							<div class="input">
-								<input type="text" id="nom" pattern="[A-zÀ-ú]*" required>
 								<select id="société" name="société">
-									<option></option>
+									<option>-</option>
 									<option>SA</option>
 									<option>SARL</option>
 									<option>EURL</option>
@@ -72,51 +66,33 @@
 									<option>SCOP</option>
 									<option>SCIC</option>
 									<option>-- Ajouter --</option>
-								</select>
-								<input type="text" id="catégorie"" required>
-							</div>
+								</select><br>
+								<label for="catégorie">Catégories*</label>
+								<input type="text" id="catégorie" required><br>
+								<input type="file" name="avatar" accept="image/png, image/jpeg">
 						</div>
 						<div id="modification">
 							<div id="icone">
-								<input type="datetime-local" id="rdv" min="2020-01-01T00:00" max="2030-12-31T:00:00">
-								<a href="../catalogue_produits_fournisseurs/liste_des_catalogues.html" target="_blank"><i class="fas fa-book"></i></a>
+								<input type="datetime-local" id="rdv" min="2020-01-01T00:00" max="2030-12-31T00:00">
+								<a href="../catalogue_produits_fournisseurs/création.html" target="_blank"><i class="fas fa-book"></i></a>
 							</div>
 						</div>
 						
 					
 				</div>
 				<div id="centre">
-					
 						<div id="adresse">
-							<div>
-								<label for="rue">N° et nom de la voie*</label>
-								<label for="complément">Complément d'adresse</label>							
-								<label for="cp">Code postal*</label>
-								<label for="ville">Ville*</label>
-								<label for="pays">Pays*</label>
-							</div>
-							<div>
-								<input type="text" id="rue" pattern="[A-zÀ-ú0-9]*" required>
-								<input type="text" id="complément" pattern="[A-zÀ-ú0-9]*">
-								<input type="text" id="cp" pattern="[0-9]*" required>
-								<input type="text" id="ville" pattern="[A-zÀ-ú]*" required>
-								<input type="text" id="pays" pattern="[A-zÀ-ú]*" required>
-							</div>
+								<label for="rue">N° et nom de la voie*</label><input type="text" id="rue" pattern="[A-zÀ-ú0-9]*" required><br>
+								<label for="complément">Complément d'adresse</label><input type="text" id="complément" pattern="[A-zÀ-ú0-9]*"><br>						
+								<label for="cp">Code postal*</label><input type="text" id="cp" pattern="[0-9]*" required><br>
+								<label for="ville">Ville*</label><input type="text" id="ville" pattern="[A-zÀ-ú]*" required><br>
+								<label for="pays">Pays*</label><input type="text" id="pays" pattern="[A-zÀ-ú]*" required>
 						</div>
 						<div id="autres">
-							<div>
-								<label for="site">Site web*</label>
-								<label for="mail">Email*</label>
-								<label for="tél">Tél*</label>
-								<label for="fax">Fax</label>
-							</div>
-
-							<div>
-								<input type="url" id="site" required>
-								<input type="email" id="mail" required>
-								<input type="text" id="tél" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" required>
-								<input type="text" id="fax" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$">
-							</div>
+								<label for="site">Site web*</label><input type="url" id="site" required><br>
+								<label for="mail">Email*</label><input type="email" id="mail" required><br>
+								<label for="tél">Tél*</label><input type="text" id="tél" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" required><br>
+								<label for="fax">Fax</label><input type="text" id="fax" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$">	
 						</div>
 					
 				</div>

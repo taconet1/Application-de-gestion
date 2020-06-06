@@ -40,7 +40,7 @@
 			</div>
 			<div id="option2">
 				<a href="../../home.html" id="home"><i class='fas fa-home'></i></a>
-				<a href="../../aide.html" id="aide" target="_blank">Aide</a>
+				<a href="../../en_cours_de_construction.html" id="aide" target="_blank">Aide</a>
 			</div>
 		</nav>
 								
@@ -50,19 +50,11 @@
 					<i class="fas fa-file-image"></i>
 					
 					<div id="infos_catalogue">
-						<div id="label">
 							<p>Numéro: </p>
-							<label for="nom">Nom*</label>
+							<label for="nom">Nom*</label><input type="text" id="nom" pattern="[A-zÀ-ú]*" required><br>
 							<label for="fournisseur">Fournisseur*</label>
-							<label for="collection">Collection*</label>
-							<label for="catégorie">Catégories*</label>
-						</div>
-						
-						<div id="input">
-							<input type="text" id="nom" pattern="[A-zÀ-ú]*" required>
-
 							<select id="fournisseur" name="fournisseur">
-								<option></option>
+								<option>-</option>
 								<option>NaturéO</option>
 								<option>Amélie et Yoann Cosse</option>
 								<option>Babybio</option>
@@ -72,29 +64,24 @@
 								<option>Delouis</option>
 								<option>EARL Fontaine de Berle</option>
 								<option>-- Ajouter --</option>
-							</select>
-							
+							</select><br>
+							<label for="collection">Collection*</label>
 							<select id="collection" name="collection">
-								<option></option>
+								<option>-</option>
 								<option>Annuel</option>
 								<option>Promotionnel</option>
 								<option>Mensuel</option>
 								<option>Saisonnière</option>
 								<option>Thématique</option>
 								<option>-- Ajouter --</option>
-							</select>
-							
-							<input type="text" id="catégorie" required>
-						</div>
+							</select><br>
+							<label for="catégorie">Catégories*</label><input type="text" id="catégorie" required><br>
+							<input type="file" name="avatar" accept="image/png, image/jpeg">
 					</div>
 					
 					<div id="modification">
-						<label for="data_cata">Date du catalogue*</label>
-						<input type="date" id="data_cata" value="2018-07-22" min="1900-01-01" max="2020-12-31" required>
-						<div id="document">
-							<i class="far fa-file-pdf"></i>
-							<p>Document relatif</p>
-						</div>
+						<label for="date_cata">Date du catalogue*</label><input type="date" id="date_cata" min="1900-01-01" max="2020-12-31" required><br>
+						<p><i class="far fa-file-pdf"></i> Document relatif</p><input type="file" name="avatar" accept="application/pdf">
 					</div>
 				</div>
 				<div id="bas">

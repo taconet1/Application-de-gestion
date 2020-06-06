@@ -40,7 +40,7 @@
 			</div>
 			<div id="option2">
 				<a href="../../home.html" id="home"><i class='fas fa-home'></i></a>
-				<a href="../../aide.html" id="aide" target="_blank">Aide</a>
+				<a href="../../en_cours_de_construction.html" id="aide" target="_blank">Aide</a>
 			</div>
 		</nav>
 								
@@ -49,18 +49,11 @@
 				<div id="haut">
 					<i class="fas fa-file-image"></i>	
 					<div id="infos_produit">
-						<div id="label">
 							<p>Référence: </p>
-							<label for="nom">Désignation*</label>
+							<label for="nom">Désignation*</label><input type="text" id="nom" pattern="[A-zÀ-ú]*" required><br>
 							<label for="fournisseur">Fournisseur*</label>
-							<label for="catégorie">Catégories*</label>
-							<p>Prix de vente TTC: </p>
-						</div>
-						
-						<div id="input">
-							<input type="text" id="nom" pattern="[A-zÀ-ú]*" required>
-
 							<select id="fournisseur" name="fournisseur">
+								<option>-</option>
 								<option>NaturéO</option>
 								<option>Amélie et Yoann Cosse</option>
 								<option>Babybio</option>
@@ -70,15 +63,15 @@
 								<option>Delouis</option>
 								<option>EARL Fontaine de Berle</option>
 								<option>-- Ajouter --</option>
-							</select>
-							
-							<input type="text" id="catégorie" value="Fruits et légumes" required>
-						</div>
+							</select><br>
+							<label for="catégorie">Catégories*</label><input type="text" id="catégorie" required><br>
+							<p>Prix de vente TTC: </p><br>
+							<input type="file" name="avatar" accept="image/png, image/jpeg">
 					</div>
 					
 					<div id="modification">
-						<img src="../../images/code-barre.png">
-						<p>Code barre: 123456789012</p>
+						<img src="../../images/code-barre.png" alt="Code-barre"><br>
+						<p>Code barre: 1234567890128</p>
 					</div>
 				</div>
 				<div id="centre">
@@ -96,7 +89,7 @@
 						<input type="text" id="label" pattern="[A-zÀ-ú]*" required>
 						<label for="région">Région</label>
 						<select id="région" name="région">
-							<option></option>
+							<option>-</option>
 							<option>Auvergne-Rhône-Alpes</option>
 							<option>Bourgogne-France-Comté</option>
 							<option>Bretagne</option>
@@ -113,13 +106,13 @@
 						</select>
 						<label for="pays">Pays</label>
 						<select id="pays" name="pays">
-							<option></option>
+							<option>-</option>
 							<option>France</option>
 							<option>Espagne</option>
 						</select>
 						<label for="nutri">Nutri-score</label>
 						<select id="nutri" name="nutri">
-							<option></option>
+							<option>-</option>
 							<option>A</option>
 							<option>B</option>
 							<option>C</option>
@@ -134,7 +127,7 @@
 						<input type="text" id="étagère" pattern="[0-9]*">
 						<label for="conditionnement">Conditionnement</label>
 						<select id="conditionnement" name="conditionnement">
-							<option></option>
+							<option>-</option>
 							<option>Barquette</option>
 							<option>Brique</option>
 							<option>Bouteille</option>
@@ -148,11 +141,11 @@
 					<div id="description">
 						<div>
 							<label for="infos_nutri">Informations nutritionnelle</label>
-							<textarea id="story" name="story"></textarea>
+							<textarea id="infos_nutri" name="infos_nutri"></textarea>
 						</div>
 						<div>
 							<label for="ingrédients">Ingrédients</label>
-							<textarea id="story" name="story"></textarea>
+							<textarea id="ingrédients" name="ingrédients"></textarea>
 						</div>
 					</div>
 				</div>

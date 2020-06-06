@@ -29,24 +29,22 @@ div#haut {
 	margin: 1% 1% 0.5% 1%;
 }
 
-#infos_fournisseur input, #infos_fournisseur select {
-	margin: 6% 0% 8.5% 10%;
-}
-
-#infos_fournisseur label {
-	margin: 25% 10% 5% 0;
-}
-
-#infos_fournisseur div {
-	display: flex;
-	flex-direction: column;
-}
-
 #infos_fournisseur {
 	align-self: flex-end;
-	width: 50%;
-	margin-left: 2%;
-	display: flex;
+	margin-left: 1%;
+}
+
+label {
+	display: block; 
+	width: 120px;
+	float: left;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+input, select {
+	margin-top: 1%;
+	margin-bottom: 1%;
 }
 
 #modification {
@@ -80,46 +78,25 @@ div#haut {
 
 /* Centre */
 div#centre {
-	width: 100%;
 	display: flex;
 	margin: 0 1% 0 1%;
 }
 
-#adresse, #autres {
-	align-self: flex-end;
-	display: flex;
+#adresse label {
+	width: 200px;
 }
 
-#autres {
-	margin-left: 20%;
- }
-
-#adresse div, #autres div{
-	display: flex;
-	flex-direction: column;
+#adresse {
+	width: 600px;
 }
 
-#centre input, #centre select {
-	margin: 3.5% 0 1.5% 0;
-	width: 300px;
-}
-
-#centre label {
-	width: 160px;
-	margin: 6% 2% 6% 0;
-}
-
-#autres label {
-	width: 100px;
-	margin: 12% 2% 7.5% 0;
-}
 
 /* Bas */
 #bas {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	margin: 0.5% 1% 0.5% 1%;
+	margin: 1%;
 }
 
 #bas #content {

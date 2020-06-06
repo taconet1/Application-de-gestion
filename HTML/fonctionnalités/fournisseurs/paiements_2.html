@@ -42,7 +42,7 @@
 			</div>
 			<div id="option2">
 				<a href="../../home.html" id="home"><i class='fas fa-home'></i></a>
-				<a href="../../aide.html" id="aide" target="_blank">Aide</a>
+				<a href="../../en_cours_de_construction.html" id="aide" target="_blank">Aide</a>
 			</div>
 		</nav>
 
@@ -51,15 +51,8 @@
 					
 						<i class="material-icons">add_a_photo</i>
 						<div id="infos_fournisseur">
-						
-							<div class="label">
-								<label for="nom">Nom*</label>
+								<label for="nom">Nom*</label><input type="text" id="nom" value="NaturéO" pattern="[A-zÀ-ú]*" required><br>
 								<label for="société">Société*</label>
-								<label for="catégorie">Catégories*</label>
-							</div>
-							
-							<div class="input">
-								<input type="text" id="nom" value="Infino" pattern="[A-zÀ-ú]*" required>
 								<select id="société" name="société">
 									<option>SA</option>
 									<option>SARL</option>
@@ -72,15 +65,15 @@
 									<option>SCOP</option>
 									<option>SCIC</option>
 									<option>-- Ajouter --</option>
-								</select>
-								<input type="text" id="catégorie" value="Fruits et légumes, Vrac, Viande" required>
-							</div>
+								</select><br>
+								<label for="catégorie">Catégories*</label><input type="text" id="catégorie" value="Fruits et légumes, Vrac, Viande" required><br>
+								<input type="file" name="avatar" accept="image/png, image/jpeg">
 						</div>
 						<div id="modification">
 							<p>Historique de modification</p>
 							<p>Créé le: Jeudi 20 mars 2021 à 10:56</p>
 							<div id="icone">
-								<input type="datetime-local" id="rdv" value="2020-05-01T13:30" min="2020-01-01T00:00" max="2030-12-31T:00:00">
+								<input type="datetime-local" id="rdv" value="2020-05-01T13:30" min="2020-01-01T00:00" max="2030-12-31T00:00">
 								<a href="../catalogue_produits_fournisseurs/consultation.html" target="_blank"><i class="fas fa-book"></i></a>
 							</div>
 						</div>
@@ -90,35 +83,18 @@
 				<div id="centre">
 					
 						<div id="adresse">
-							<div>
-								<label for="rue">N° et nom de la voie*</label>
-								<label for="complément">Complément d'adresse</label>							
-								<label for="cp">Code postal*</label>
-								<label for="ville">Ville*</label>
-								<label for="pays">Pays*</label>
-							</div>
-							<div>
-								<input type="text" id="rue" value="24 avenue de Gérard" pattern="[A-zÀ-ú0-9]*" required>
-								<input type="text" id="complément" pattern="[A-zÀ-ú0-9]*">
-								<input type="text" id="cp" value="87000" pattern="[0-9]*" required>
-								<input type="text" id="ville" value="Limoges" pattern="[A-zÀ-ú]*" required>
-								<input type="text" id="pays" value="France" pattern="[A-zÀ-ú]*" required>
-							</div>
+
+								<label for="rue">N° et nom de la voie*</label><input type="text" id="rue" value="24 avenue de Gérard" pattern="[A-zÀ-ú0-9]*" required><br>
+								<label for="complément">Complément d'adresse</label><input type="text" id="complément" pattern="[A-zÀ-ú0-9]*"><br>				
+								<label for="cp">Code postal*</label><input type="text" id="cp" value="87000" pattern="[0-9]*" required><br>
+								<label for="ville">Ville*</label><input type="text" id="ville" value="Limoges" pattern="[A-zÀ-ú]*" required><br>
+								<label for="pays">Pays*</label><input type="text" id="pays" value="France" pattern="[A-zÀ-ú]*" required>
 						</div>
 						<div id="autres">
-							<div>
-								<label for="site">Site web*</label>
-								<label for="mail">Email*</label>
-								<label for="tél">Tél*</label>
-								<label for="fax">Fax</label>
-							</div>
-
-							<div>
-								<input type="url" id="site" value="infino.enp.com" required>
-								<input type="email" id="mail" value="infino@gmail.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
-								<input type="text" id="tél" value="02 02 02 77 76" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" required>
-								<input type="text" id="fax" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$">
-							</div>
+								<label for="site">Site web*</label><input type="url" id="site" value="https://infino.enp.com" required><br>
+								<label for="mail">Email*</label><input type="email" id="mail" value="infino@gmail.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required><br>
+								<label for="tél">Tél*</label><input type="text" id="tél" value="02 02 02 77 76" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$" required><br>
+								<label for="fax">Fax</label><input type="text" id="fax" pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$">
 						</div>
 					
 				</div>
@@ -131,6 +107,7 @@
 							<thead>
 								<tr>
 									<th></th>
+									<th></th>
 									<th>Numéro de compte</th>
 									<th>Nom de la banque</th>
 									<th>Nom du titulaire du compte</th>
@@ -138,7 +115,15 @@
 							</thead>
 							<tbody>
 								<tr>
+									<td><i class="far fa-trash-alt"></i></td>
+									<td><i class="far fa-edit"></i></td>
+									<td>FR00 1234 5123 4512 3456 7891 086</td>
+									<td>AXA Banque</td>
+									<td>Dominique Dupont</td>
+								</tr>
+								<tr>
 									<td><i class="fas fa-plus-circle"></i></td>
+									<td></td>
 									<td></td>
 									<td></td>
 									<td></td>
