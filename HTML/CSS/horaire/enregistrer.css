@@ -26,7 +26,16 @@
 	margin-right: 10%
 }
 
-input, select {
+label:not(#creneau1):not(#creneau2):not(#total){
+
+}
+
+#creneau1, #creneau2{
+	padding-left: 2%;
+}
+
+input:not(#preambule), select {
+	display: flex;
 	padding: 10px;
 	font-size: 12px;
 	margin: 5px 0 5px 0;
