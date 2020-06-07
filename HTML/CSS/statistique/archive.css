@@ -1,0 +1,31 @@
+/* Nav */
+#option a:last-child {
+	font-weight: bold;
+}
+
+/* Content */
+#content {
+	width: 90%;
+	margin: 1% 1% 1% 1%;
+	padding-bottom: 5%;
+}
+
+#search-container{
+	margin-bottom: 1%;
+}
+
+td{
+	padding: 1% 5% 1% 5%;
+	margin: 1% 20% 1% 20%;
+}
+
+
+
+/* Footer */
+footer p {
+	margin: 1%;
+}
+
+footer {
+	text-align:center;
+}

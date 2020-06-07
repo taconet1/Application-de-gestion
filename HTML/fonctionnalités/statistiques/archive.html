@@ -3,7 +3,7 @@
 <head>
 	<title>Societe PILAF_Application</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../../CSS/statistique/statistique.css">
+	<link rel="stylesheet" type="text/css" href="../../CSS/statistique/archive.css">
 	<link rel="stylesheet" type="text/css" href="../../CSS/form.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -34,8 +34,8 @@
 	<main>
 		<nav>
 			<div id="option">
-				<a href="#">Statistiques Globales</a>
-				<a href="archive.html">Archives</a>
+				<a href="statistiques.html">Statistiques Globales</a>
+				<a href="#">Archives</a>
 			</div>
 			<div id="option2">
 				<a href="../../home.html" id="home"><i class='fas fa-home'></i></a>
@@ -43,19 +43,20 @@
 			</div>
 		</nav>
 		<div id="content">
-			<div id="gauche">
-				<img src="../../images/graph1.png">
-				<label>Nombre de clients de la journée</label>
-				<input type="text" name="valeur" value="175">
-				
+			<div id="search-container">
+				<input type="text" placeholder="Rechercher" name="recherche">
+				<button type="submit"><i class="fa fa-search"></i></button>
 			</div>
-			<hr>
-			<div id="droite">
-				<label>Chiffre d'affaire de la journée (en euros)</label>
-				<input type="text" name="valeur" value="5271">
-				<img src="../../images/graph2.png">
-			</div>
+			<table border="1">
+				<tr>
+					<td>N° de semaine</td>
+					<td>Fichier telechargeable</td>
+				</tr>
+			</table>
+
 		</div>
+
+
 	</main>
 	<hr>
 	<footer>
