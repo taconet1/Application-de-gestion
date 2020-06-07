@@ -6,12 +6,12 @@
 /* Content */
 #content {
 	width: 90%;
-	margin: 0 1% 0 1%;
+	margin: 1% 1% 1% 1%;
 }
 
-#droite{
+/*#droite{
 	position: relative;
-	float: right;
+	float: right;*/
 }
 #gauche{
 	position: relative;
@@ -23,10 +23,12 @@ h2{
 	margin: 1%;
 }
 
+#client{
+	margin-top: 1%;
+}
 
 #produit, #information, #client, #prix{
 	border:2px solid black;
-	border-radius: 2%;
 	padding: 2% 2% 2% 2%;
 }
 
@@ -35,12 +37,15 @@ h2{
 	margin: 1%;
 }
 input, select {
+	display: flex;
 	padding: 10px;
 	font-size: 12px;
 	margin: 5px 0 5px 0;
 	border: 2px solid black;
 	border-radius: 3px;
 }
+
+
 
 
 
