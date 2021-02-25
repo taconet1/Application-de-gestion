@@ -5,7 +5,7 @@
 ### Date de réalisation (1 mois) 
 26 avril 2020 - 7 juin 2020
 
-### Enseignants encadrants 
+### Enseignant encadrant  
 - Jimmy JOUANNAUD 
 
 ### Membres
